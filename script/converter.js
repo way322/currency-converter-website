@@ -152,6 +152,7 @@ reverseButton.addEventListener('click', function () {
     const temp = inputCurrency.value;
     inputCurrency.value = outputCurrency.value;
     outputCurrency.value = temp;
+
     convert();
 });
 
@@ -165,7 +166,7 @@ function convert() {
         return;
     }
 
-    const convertedAmount = (amount * rates[toCurrency]) / rates[fromCurrency];
+    const convertedAmount = (amount * rates[fromCurrency]) / rates[toCurrency];
     result.value = convertedAmount.toFixed(2);
 }
 
