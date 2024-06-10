@@ -19,28 +19,7 @@
     </header>
     <div class="section2">
         <div class="container2">
-            <div>
-                <tr>
-                <th>рекомендуем</tr>
-                <th>Все банки</th>
-                </tr>
-            </div>
-            <div>
-                <div>
-                    <h4>Банк</h4>
-                </div>
-                <div>
-                    <h4>Курс</h4>
-                </div>
-                <div>
-                    <h4>Сумма</h4>
-                </div>
-            </div>
-            <div>
-                <tr class="item">
-
-                </tr>
-            </div>
+            
         </div>
     </div>
     <header>

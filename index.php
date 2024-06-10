@@ -14,11 +14,11 @@
             <a href="index.html">Bastard</a>
         </div>
         <ul>
-            <a href="cripta.html">Курсы криптовалют</a>
-            <a href="valuti.html">Курсы валют</a>
+            <a href="cripta.php">Курсы криптовалют</a>
+            <a href="valuti.php">Курсы валют</a>
         </ul>
         <div>
-            <a href="">Войти<img src="img/key.svg"></a>
+            <a href="reg.php">Зарегистрироваться<img src="img/key.svg"></a>
         </div>
     </header>
         <div class="section">
