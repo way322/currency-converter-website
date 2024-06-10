@@ -17,7 +17,6 @@
             <a href="cripta.html">Курсы криптовалют</a>
             <a href="index.html">Конвертер валют</a>
         </ul>
-        <a href="https://goo.su/YVyKZi">Покозать на карте<img src="img/map.svg" alt=""></a>
     </header>
     <div class="section2">
         <div class="container2">
