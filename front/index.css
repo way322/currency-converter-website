@@ -2,6 +2,31 @@
     font-size: 40px;
 }
 .container-valit{
+   
+
     width: 621px;
     height: 244px;
+    border-radius: 46px;
+    background: linear-gradient(133.81deg, rgba(0, 209, 255, 0.36) 2.5%,rgba(0, 115, 140, 0.36) 49.788%,rgba(0, 0, 0, 0.36) 100%);
+}
+.input-convertor{
+    outline: none;
+    border: 0px;
+    border-radius: 25px;
+    width: 503px ;
+    height: 48px ;
+    font-size: 32px;
+}
+.h2-convertor{
+    font-size: 32px;
+}
+.convertor-input{
+    background: rgb(141, 164, 198);
+}
+.convertor-select{
+    background: rgb(60, 206, 154);
+}
+.button-revers {
+    background: transparent;
+    border: 0px;
 }
