@@ -33,8 +33,8 @@
     </div>
     <section class="section-Workspace section-convertor">
     <h1 class="h1-convertor">Конвертер валют</h1>
-        <div class="container-valit">
-            <div class="konverter1">
+        <div class="huyznaet">
+            <div class="container-valit">
                 <h2 class="h2-convertor">У меня есть</h2>
                 <input type="number" id="input" class="input-convertor convertor-input"/>
                 <select name="strani" id="input-currency" class="input-convertor convertor-select">
@@ -84,7 +84,6 @@
                     <option value="JPY">JPY - Японских иен</option>
                 </select>
             </div>
-        </div>
 
 
         <button id="reverseButton" class="button-revers"><img src="img/strelki.svg"></button>
@@ -140,8 +139,9 @@
                 <option value="JPY">JPY - Японских иен</option>
             </select>
         </div>
+        </div>
         <div class="grafik">
-            <canvas id="dayChart" width="400" height="200"></canvas>
+            <canvas id="dayChart" width="570" height="200"></canvas>
             <canvas id="monthChart" width="400" height="200"></canvas>
             <canvas id="yearChart" width="400" height="200"></canvas>
         </div>
