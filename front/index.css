@@ -30,3 +30,17 @@
     background: transparent;
     border: 0px;
 }
+
+
+.huyznaet {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-valit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 32px;
+    padding-top: 19px;
+}
