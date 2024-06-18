@@ -57,18 +57,23 @@
 
 
 .grafik{
-    
+    margin-bottom: 40px;
     height: 222px 100vh;
     display: flex;
     flex-wrap: wrap;
-   
+    font-size: 24px;
     border-radius: 25px;
     background: linear-gradient(180.00deg, rgb(0, 0, 0),rgb(24, 24, 24) 50%,rgb(60, 60, 60) 100%);
     
 }
 
 .grafik-rub{
- font-size: 60px;
-  
+ font-size: 40px;
+ padding-top: 20px;
+ padding-left: 20px;
 
+}
+.footer-otvet{
+    font-size: 36px;
+    display: flex;
 }
