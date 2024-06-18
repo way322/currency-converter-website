@@ -1,8 +1,9 @@
-.h1-convertor{
+.h1-convertor{ 
+    padding: 75px 0  25px 0 ;
     font-size: 40px;
 }
 .container-valit{
-   
+    
 
     width: 621px;
     height: 244px;
@@ -37,9 +38,10 @@
 }
 
 
-.huyznaet {
+.convertor-flex {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-bottom: 72px; 
 }
 
 .container-valit {
@@ -50,4 +52,23 @@
     flex-direction: column;
     justify-content: space-around;
     align-content: flex-start;
+    
+}
+
+
+.grafik{
+    
+    height: 222px 100vh;
+    display: flex;
+    flex-wrap: wrap;
+   
+    border-radius: 25px;
+    background: linear-gradient(180.00deg, rgb(0, 0, 0),rgb(24, 24, 24) 50%,rgb(60, 60, 60) 100%);
+    
+}
+
+.grafik-rub{
+ font-size: 60px;
+  
+
 }

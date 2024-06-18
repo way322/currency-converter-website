@@ -80,10 +80,14 @@ ul {
 
 /* contener */
 
-.section-Workspace{
+.section-Workspace{ 
+     flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    
+   
     width: 100%;
-    height: 100vh;
-  
+   
     background: url('/img/fon/fon-glav.png');
     background-size: cover;
 
@@ -91,7 +95,15 @@ ul {
 
 
 
-
+.contener-flex{
+  
+  
+    justify-content: center;
+    align-items: center;
+    padding: 0 156px ;
+  
+    
+}
 
 
 
@@ -104,9 +116,33 @@ ul {
 /* footer */
 
 .podval{
+    display: flex;
     width: 100%;
+    padding: 0 156px ;
 
     background: url('/img/fon/fon-podval.png');
     background-size: cover;
+    
+}
+
+.footer-text{
+    font-size: 24px;
+}
+.text-cookie{
+    width: 700px;
+    height: 103px;
+}
+.text-info{
+    width: 803px;
+    height: 130px;
+
+}
+.technical-support{
+    display: flex;
+border-radius: 28px;
+background: linear-gradient(180.00deg, rgb(9, 9, 11),rgb(32, 32, 32) 100%);
+width: 664px;
+height: 321px;
+
 
 }
