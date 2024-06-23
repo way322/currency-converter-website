@@ -1,4 +1,5 @@
-.h1-convertor{ 
+.h1-convertor{
+    font-family: inherit;
     padding: 75px 0  25px 0 ;
     font-size: 40px;
 }
@@ -73,7 +74,57 @@
  padding-left: 20px;
 
 }
-.footer-otvet{
-    font-size: 36px;
-    display: flex;
+@media screen and (max-width:1200px){
+    .container-valit{
+        padding-right:32px ;
+    }
+
+}
+    
+
+@media screen and (max-width: 1000px) {
+        .container-valit{
+            padding-right:32px ;
+        }
+        .grafik-rub{
+            font-size: 20px;
+        }
+}
+
+@media screen and (max-width: 750px){
+
+}
+
+@media screen and (max-width:450px){
+    .input-convertor {
+        font-size: 13px;
+    }
+    .h1-convertor{
+    text-align: center;
+    }
+    .convertor-flex{
+        justify-content: center  
+    }
+    .grafik{
+        border-radius: 31px;
+    background: linear-gradient(180.00deg, rgb(34, 137, 159),rgb(145, 145, 145) 52%,rgb(248, 59, 0) 100%);
+    }
+    .convertor-flex{
+        flex-direction: column;
+    
+
+    }
+    .container-valit{
+        max-width: 222px;
+        width: 100%;
+        
+
+    }
+    .convertor-flex{
+     align-items: center;
+    }
+    .section-Workspace {
+        background: url('/img/fon/mobail-fon.png');
+        background-size: 788px;
+      }
 }
