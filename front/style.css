@@ -1,7 +1,11 @@
+html {
+    
+    height: 100%;
 
+}
 
 body{
-   
+    
     height: 100%;
     margin: 0;
 }
@@ -377,6 +381,9 @@ animation of links in technical support */
     }
     .podval{
         align-items: center;
+        max-height: 285px;
+        height: 100%;
+
     }
     .telega{
         width: 46px;

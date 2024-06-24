@@ -146,7 +146,7 @@
                 </div>
             </div>
             <div class="grafik">
-                <h2 class="grafik-rub">График изменения курса доллара к рублю</h2>
+                <h2 class="grafik-rub">График изменения курса валют к рублю</h2>
                 <canvas id="dayChart" width="770" height="220"></canvas>
                 <canvas id="monthChart" width="0" height="100%"></canvas>
                 <canvas id="yearChart" width="0" height="100%"></canvas>
