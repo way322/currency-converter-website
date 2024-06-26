@@ -189,4 +189,7 @@ body {
     color: black;
     background: linear-gradient(133.81deg, rgba(0, 209, 255, 0.18) 2.075%,rgba(0, 115, 140, 0.18) 49.569%,rgba(0, 0, 0, 0.18) 100%);
   }
+  .pomosh {
+    max-width: 225px;
+  }
 }

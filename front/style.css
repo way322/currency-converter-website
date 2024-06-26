@@ -406,6 +406,9 @@ animation of links in technical support */
     .footer-text {
         padding-top: 10px;
     }
+    .pomosh {
+        max-width: 225px;
+    }
 
 }
 

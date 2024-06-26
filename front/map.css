@@ -129,8 +129,11 @@
     .section-Workspace {
         background: url('/img/fon/mobail-fon.png');
         background-size: 345px;
-      }
+    }
 
+    .pomosh {
+        max-width: 225px;
+    }
 
 /* 
     .text-div {
