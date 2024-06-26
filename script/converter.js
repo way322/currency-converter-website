@@ -1,3 +1,14 @@
+// Объявление переменных и элементов DOM
+// rates - объект для хранения курсов валют
+// input - элемент ввода суммы для конвертации
+// result - элемент вывода результата конвертации
+// inputCurrency - элемент выбора валюты для конвертации
+// outputCurrency - элемент выбора валюты для вывода конвертированной суммы
+// reverseButton - кнопка для обмена выбранных валют
+// dayChartCtx - контекст для отображения дневного графика
+// monthChartCtx - контекст для отображения месячного графика
+// yearChartCtx - контекст для отображения годового графика
+
 const rates = {};
 const input = document.querySelector('#input');
 const result = document.querySelector('#result');
@@ -7,9 +18,10 @@ const reverseButton = document.querySelector('#reverseButton');
 const dayChartCtx = document.getElementById('dayChart').getContext('2d');
 const monthChartCtx = document.getElementById('monthChart').getContext('2d');
 const yearChartCtx = document.getElementById('yearChart').getContext('2d');
-const API_KEY = 'YOUR_API_KEY'; // Замените на Ваш API ключ от Exchangerate API
-
+const API_KEY = 'YOUR_API_KEY'; 
+// Асинхронная функция для получения курсов валют
 async function getCurrencies() {
+    // Получаем данные с сервера
     const response = await fetch('https://www.cbr-xml-daily.ru/daily_json.js');
     const data = await response.json();
 
@@ -63,12 +75,13 @@ async function getCurrencies() {
     buildCharts();
 }
 
+// график
 async function fetchHistoricalData(startDate, endDate, baseCurrency, targetCurrency) {
     const response = await fetch(`https://api.exchangerate.host/timeseries?start_date=${startDate}&end_date=${endDate}&base=${baseCurrency}&symbols=${targetCurrency}`);
     const data = await response.json();
     return data.rates;
 }
-
+// Функция для построения графиков
 function buildCharts() {
     const labels = Object.keys(rates);
     const values = Object.values(rates);
@@ -93,7 +106,7 @@ function buildCharts() {
         }
     });
 
-    // Месячные данные
+
     fetchHistoricalData('2023-05-04', '2023-06-04', 'USD', 'RUB').then(data => {
         const monthLabels = Object.keys(data);
         const monthValues = Object.values(data).map(rate => rates.RUB / rate.RUB);
@@ -119,7 +132,7 @@ function buildCharts() {
         });
     });
 
-    // Годовые данные
+
     fetchHistoricalData('2023-06-04', '2024-06-04', 'USD', 'RUB').then(data => {
         const yearLabels = Object.keys(data);
         const yearValues = Object.values(data).map(rate => rates.RUB / rate.RUB);
@@ -145,9 +158,9 @@ function buildCharts() {
         });
     });
 }
-
+// Вызываем функцию для получения курсов валют
 getCurrencies();
-
+// Обработчик для кнопки разворота валют
 reverseButton.addEventListener('click', function () {
     const temp = inputCurrency.value;
     inputCurrency.value = outputCurrency.value;
@@ -155,7 +168,11 @@ reverseButton.addEventListener('click', function () {
 
     convert();
 });
-
+// Функция для конвертации валюты
+// Получает введенную сумму, выбранные валюты для конвертации и выводит результат
+// Получение суммы, выбранных валют и проверка на ввод числа
+// Конвертация суммы в выбранные валюты
+// Отображение результата конвертации с округлением до двух знаков после запятой
 function convert() {
     const amount = parseFloat(input.value);
     const fromCurrency = inputCurrency.value;
@@ -169,7 +186,7 @@ function convert() {
     const convertedAmount = (amount * rates[fromCurrency]) / rates[toCurrency];
     result.value = convertedAmount.toFixed(2);
 }
-
+// Добавление слушателей событий для ввода, выбора валют и смены валюты
 input.addEventListener('input', convert);
 inputCurrency.addEventListener('change', convert);
 outputCurrency.addEventListener('change', convert);
